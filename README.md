@@ -27,8 +27,20 @@ Injected   🟢
 OS    🟢                                   
 Gpu 🟢                                              
 Cpu 🟢
-Desktop 🟢
-Ram 🟢
-Ram Usage 🟢
-Storage 🟢
+Desktop 🟢                                                        
+Ram 🟢                                              
+Ram Usage 🟢                                              
+Storage 🟢                                              
 ------------ 
+
+------------        
+# IP Info RECOVERY
+Ip    🟢                                   
+City 🟢                                              
+Country 🟢
+Hostname 🟢                                                        
+Region 🟢                                              
+Org 🟢                                              
+Long & Lat 🟢     
+Timezone 🟢                                              
+------------
