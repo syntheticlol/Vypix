@@ -30,7 +30,7 @@ Injected   🟢
 # System Info RECOVERY
 OS    🟢                                   
 Gpu 🟢                                              
-Cpu 🟢
+Cpu 🟢                                                
 Desktop 🟢                                                        
 Ram 🟢                                              
 Ram Usage 🟢                                              
