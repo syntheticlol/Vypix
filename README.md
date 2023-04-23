@@ -41,7 +41,7 @@ Storage 🟢
 # IP Info RECOVERY
 Ip    🟢                                   
 City 🟢                                              
-Country 🟢
+Country 🟢                                                                     
 Hostname 🟢                                                        
 Region 🟢                                              
 Org 🟢                                              
